@@ -1,4 +1,4 @@
-![copy-mailto](gh-assets/copy-mailto-og.png)
+![copy-mailto](gh-assets/copy-mailto-gh.png)
 
 <div align="center">
   <h1>Copy Mailto</h1>
