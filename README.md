@@ -15,5 +15,7 @@
 
 ## Getting started
 
-1. Download the extension
-2. Click on links
+1. Install the extension.
+2. Profit 🤑
+
+![Copy Mailto GIF](gh-assets/copy-mailto-gif.gif)
