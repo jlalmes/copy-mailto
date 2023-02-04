@@ -1,28 +1,48 @@
 {
   "name": "copy-mailto",
-  "displayName": "Copy mailto",
+  "displayName": "Copy Mailto",
   "version": "0.0.1",
-  "description": "Copy mailto links to clipboard",
+  "description": "Copy email and telephone links to your clipboard",
   "author": "jlalmes",
   "packageManager": "npm@8.19.2",
   "scripts": {
     "dev": "plasmo dev",
-    "build": "plasmo build",
-    "package": "plasmo package"
+    "build:chrome": "plasmo build --zip --target=chrome-mv3",
+    "build:firefox": "plasmo build --zip --target=firefox-mv2",
+    "build:edge": "plasmo build --zip --target=edge-mv3",
+    "build:brave": "plasmo build --zip --target=brave-mv3",
+    "build:opera": "plasmo build --zip --target=opera-mv3",
+    "build": "npm run build:chrome && npm run build:firefox && npm run build:edge && npm run build:brave && npm run build:opera"
   },
   "dependencies": {
-    "plasmo": "0.64.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "copy-to-clipboard": "^3.3.3",
+    "plasmo": "^0.64.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.7.1"
   },
   "devDependencies": {
-    "@types/chrome": "0.0.210",
-    "@types/node": "18.11.18",
-    "@types/react": "18.0.27",
-    "@types/react-dom": "18.0.10",
-    "prettier": "2.8.3",
-    "typescript": "4.9.4",
-    "@plasmohq/prettier-plugin-sort-imports": "3.6.1"
+    "@types/chrome": "^0.0.210",
+    "@types/eslint": "^8.21.0",
+    "@types/node": "^18.11.18",
+    "@types/prettier": "^2.7.2",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.4"
   },
   "manifest": {
     "host_permissions": [
