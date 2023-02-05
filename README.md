@@ -15,7 +15,7 @@
 
 ## Getting started
 
-1. Install the extension.
+1. Install the [Copy Mailto Chrome Extension](https://chrome.google.com/webstore/detail/copy-mailto/jccmfdaddfaagbbignmdojimiadiamal/related)
 2. Profit 🤑
 
 ![Copy Mailto GIF](gh-assets/copy-mailto-gif.gif)
